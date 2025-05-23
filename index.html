@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="main" style="background-color: #dedede;">
+  <section id="welcome" class="h-100 w-100">
+    <!-- Rotated side text-->
+
+    <div id="welcome-to-my-portfolio">
+      welcome to my portfolio
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100 top-0 position-fixed"  >
+    <div class="container-fluid" >
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="main-navbar" style="z-index: 5; font-size: 2vw;">
+        <ul class="navbar-nav ms-auto text-white">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#my-projects">My Projects</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Hi text -->
+     <div class="d-flex justify-content-center align-items-center h-100" style="margin-top: 2vh;">
+      <div id="name" class="fw-bold text-center" style="font-size: calc(4vw + 4vh + 3vmin);">Hi there!</div>
+    </div>
+
+  <section style="margin-top: 5vh; min-height: 65vh; background-color: white;">
+  <div class="container-fluid">
+    <!-- Row 1: My name is -->
+    <div class="row">
+      <div id="name-row"class="col-5 text-end px-2.5 py-2">
+        My <span id="welcome-name"style="color: #D7C946;">name</span> is
+      </div>
+      <div class="col d-none d-md-block" style="background-color: #dedede;"></div>
+    </div>
+
+    <!-- Row 2: Girish -->
+    <div class="row">
+      <div class="col d-none d-md-block"></div>
+      <div id="girish-col"class="col">
+       <p id="girish">Girish</p> 
+      </div>
+      <div class="col d-none d-md-block " style="background-color: #dedede;"></div>
+    </div>
+
+    <!-- Row 3: Bissessur -->
+    <div class="row">
+      <div class="col d-none d-md-block" ></div>
+      <div id="biss-col"class="col-md-4 py-2 text-center">
+        Bissessur
+      </div>
+      <div class="col d-none d-md-block" style="background-color: #dedede;"></div>
+    </div>
+
+    <!-- Row 4: Closing border -->
+    <div class="row">
+      <div class="col d-none d-md-block"></div>
+      <div class="col d-none d-md-block"></div>
+      <div class="col" style="border-top: 3px solid black;border-image: linear-gradient(to left, black 97%, transparent -96.8%) 1"></div>
+    </div>
+  </div>
+</section>
+  </section>
+
+     <!--About me section  -->
+  <section id="about-me" class="reveal-on-scroll w-100" style="transform: translateY(50px); transition: all 0.8s ease-out; margin-top: 10%; min-height: 100vh; ">
+    <div class="container-fluid h-100" >
+      <div class="row justify-content-center h-100">
+        <div class="col-5" >
+          <div  id="about-img"class="w-60 mt-4" style="background:white;">
+            <p  id="about-title">About <span style="color:#D7C946;">me</span> </p>
+            <div id="about-text" >
+                          <p >Hey, I'm Girish — a Computer Science student at the University of Ottawa who really enjoys building things with code.</p>
+                            <p> I recently worked as a co-op developer at Trend Micro, where I got some great hands-on experience contributing to security tools for the cloud. Lately, I've been getting into machine learning and embedded systems — I like the challenge of learning how things work under the hood.</p>
+                            <p>Outside of programming, I'm into swimming, running, and teaching myself new stuff just for the fun of it. I’m always open to connecting with people who are building cool things or have interesting ideas.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-5" >
+          <div id="about-gold"class="w-60 mt-5 " style="background: black;" >
+          <p id="how-title">How I <span style="color: white;">work</span></p>
+          <div id="how-text">
+                          <p>I like to approach work with curiosity first — whether it's a bug I don't understand or a framework I haven't used before, I enjoy figuring things out. I try to break problems into small steps, and I'm not afraid to ask questions or look things up</p>
+                          <p>I work best when I can focus deeply, so I tend to keep things organized: I use Git for version control, write to-do lists, and comment my code as I go.</p>
+                          <p>When I'm working with others, I value clear communication and giving everyone space to contribute. I've learned that sharing progress early and often helps avoid surprises and builds better results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+  
+ <section id="my-projects" style="transform: translateY(50px); transition: all 0.8s ease-out; margin-top: 10%; min-height: 100vh;padding-top: 5%;">
+  <div id="project-header"class="container-sm h-100">
+    <div id="header-div">
+      <p style="font-size: 3vw;margin-top: 1%; letter-spacing: 2vw;">My p<span style="color: #D7C946;">roj</span>ects</p>
+    </div>
+    <div id="projects">
+    <div class="row d-flex" id="project-row">
+     
+      <div class="col" id="big-col">
+         <a href="./Project1.html">
+        <div>
+          <p id="project-title" style="font-size: 3vw; margin-top: 5%;"><span style="color: #D7C946;">Pro</span>ject 1</p>
+                    <img src="assets/teeth.jpg" class="img-fluid w-50">
+
+                    <p style="font-size: 1.5vw; margin-top:5%">Description of project 1 goes here.</p>
+
+                    </div>
+                    </a>                  
+      </div>
+
+      <div id="small-col"class="col ">
+        <a href="./Project2.html">
+          <div>
+          <p id="project-title">P<span style="color: #D7C946;">roj</span>ect 2</p>
+          <img src="assets/pexels-francesco-ungaro-1670977.jpg" class="img-fluid w-50" style="padding-top: clamp(0.5vw,2vw,5vw);">
+          <p style="font-size: 1.5vw; margin-top: 5%">Description of project 2 goes here.</p>
+          </div>
+           </a>
+      </div>
+     
+    </div>
+    <div class="row mt-4 d-flex" id="project-row">
+    <div id="small-col" class="col-sm-4">
+      <a href="./Project3.html">
+        <div>
+          <p id="project-title" >Pr<span style="color: #D7C946;">oje</span>ct 3</p>
+                    <img src="assets/pexels-asphotograpy-230544.jpg" class="img-fluid w-50">
+
+          <p style="font-size: 1.5vw; margin-top: 5%;">Description of project 3 goes here.</p>
+          </div>
+          </a>
+      </div>
+      <div id="big-col" class="col">
+         <a href="./Project4.html">
+          <div>
+          <p id="project-title" >Pro<span style="color: #D7C946;">jec</span>t 4</p>
+                   <img src="assets/pexels-goumbik-669612.jpg" class="img-fluid w-50"></a>
+          <p style="font-size: 1.5vw; margin-top: 5%;">Description of project 4 goes here.</p>
+          </div>
+          </a>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+ </section >
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+
+</body>
+</html>
