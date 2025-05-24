@@ -14,6 +14,7 @@
   }
 }
 
+/* General animation for other components */
 @keyframes fadeSlideIn {
   0% {
     opacity: 0;
@@ -24,6 +25,7 @@
     transform: translateY(0);
   }
 }
+/* Special animation for "How I work" */
 @keyframes fadeSlideInTop{
   0% {
     opacity: 0;
@@ -173,20 +175,20 @@ nav.navbar {
 }
 #about-title{
   margin-left: 40%;
-  font-size:3vw;
+  font-size: clamp(1rem, 3vw, 2.8rem);
    padding-top: 5%;  
    text-shadow:
     1px 1px 1px black,
     2px 2px 1px black;
 }
-#about-text{
+#about-text,#how-text{
   justify-content: center; 
   align-items: center;
   margin-top: 5%;
   margin-left: 10%;
   margin-right: 10%; 
   padding-bottom: 5%; 
-  font-size: 1.5vw;
+  font-size: clamp(0.7rem, 1.8vw, 2rem);
 }
 
 #how-title{
@@ -194,19 +196,12 @@ nav.navbar {
   text-shadow:  1px 1px white,
     2px 2px 1px #d7c946;
   margin-left: 35%;
-  font-size:3vw;
+  font-size: clamp(1rem, 3vw, 2.8rem);
   padding-top: 5%
 }
 
 #how-text{
-  justify-content: center;
-  align-items: center; 
-  margin-top: 5%; 
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 1.5vw;
   color: #D7C946;
-  padding-bottom: 5%;
 }
 
 /* My Projects related Css: animations and regualr css */
@@ -275,14 +270,20 @@ a {
    flex-basis: 65%;
   transform: scale(1.01);
 }
-
-
 #project-row:hover  #big-col {
  flex-basis: 30%;}
 }
 
-@media(max-width:780px){
+@media (max-width:780px){
   #welcome-to-my-portfolio{
     visibility: hidden !important;
+  }
+  #project-row {
+    flex-wrap: wrap;
+  }
+
+  #big-col, #small-col {
+    flex-basis: 50% !important;
+    width: 50% !important;
   }
 }
