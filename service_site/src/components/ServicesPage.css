@@ -1,0 +1,130 @@
+.services-page{
+    margin-top: 3%;
+    font-family: Poppins, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+.header-text{
+    font-weight: 700;
+    font-size: clamp(2.5em, 6vw, 4em);
+    text-align: start;
+}
+.servi{    
+    text-align: center;
+    font-size: clamp(1.5em, 5vw, 3vw);
+}
+
+.ces{
+    font-size: clamp(1.7em, 5.5vw, 4vw);
+    margin-left: -7%;
+    margin-top: -7%;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    align-items: center;
+}
+.main-text{
+    font-size: clamp(1em, 5vw, 2.4vw);
+    font-weight: 400;;
+    margin-left: 7%;
+    text-align: start;
+    margin-top: -5%;
+    max-width:30% ;
+    
+}
+
+ .slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 1rem;
+}
+
+.cards-slider {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  flex-wrap: nowrap;
+}
+
+.service-card {
+  min-width: 220px;
+  max-width: 100%;
+  flex: 1 0 30%;
+  height: 270px;
+  background-color: #608977;
+  color: black;
+  border: black solid 4px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  color: #FAD049;
+  cursor: pointer;
+  transform: scale(1.08);
+}
+.service-card img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+.chevron {
+  background: none;
+  border: none;
+  color: #608977;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.chevron:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.chevron:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .slider-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chevron {
+    font-size: 2.5rem;
+  }
+
+  .main-text {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .cards-slider {
+    flex-direction: row;
+  }
+
+  .service-card {
+    height: 230px;
+    font-size: 0.9rem;
+  }
+
+  .service-card img {
+    height: 40%;
+    width: 40%;
+  }
+}
