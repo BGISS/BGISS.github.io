@@ -6,9 +6,9 @@ function App() {
 
   return (
     <>
-  <BrowserRouter>
+  <BrowserRouter basename='/service-site'>
     <Routes>
-    <Route path="/" element={<Application/>}/>
+    <Route path="/"  element={<Application/>}/>
     </Routes>
       </BrowserRouter>
     </>
