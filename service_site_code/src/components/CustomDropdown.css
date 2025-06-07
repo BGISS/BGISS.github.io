@@ -1,0 +1,20 @@
+.menu{
+   max-height: 250px;
+   max-width: 300px;
+   padding: 10px;
+}
+.dropdown{
+    width: 20%;
+}
+.dropdown-toggle{
+    background-color: #608977;
+    color: black;
+    font-weight: 600;
+}
+.form-check
+{
+ margin-left: 10px; 
+}
+.form-check::checkmark{
+    color: #608977;
+}
