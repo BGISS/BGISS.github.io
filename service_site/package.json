@@ -1,6 +1,5 @@
 {
   "name": "service_site",
-  "homepage": "https://BGISS.github.io/service_site",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -b main -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap-icons": "^1.13.1",
