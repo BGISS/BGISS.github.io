@@ -25,6 +25,7 @@ function handleButtonClick() {
               <p className="big-text">Ottawa's most reliable cleaning service!</p>
                  <p className="small-text">
                  Don't be afraid of no  <span className="dust">dust!</span>
+                 <p>This website was made by Girish Bissessur</p>
                 </p>
             </Col>
             </Row>
