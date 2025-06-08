@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-  <BrowserRouter>
+  <BrowserRouter basename='/service_site'>
     <Routes>
     <Route path="/"  element={<Application/>}/>
     </Routes>
