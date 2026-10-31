@@ -7,6 +7,7 @@ import {
   Linkedin,
   ExternalLink,
   ArrowRight,
+  FileText,
 } from "lucide-react";
 import "./App.css";
 
@@ -54,13 +55,22 @@ export default function App() {
       tech: ["ESP32", "C++", "FreeRTOS", "I2C Sensors"],
     },
     {
-      title: "Image Similarity Search",
+      title: "Hydra: Adversarial Evasion Lab",
       description:
-        "Java program that finds the 5 most similar images to a query image by building reduced color histograms for each and comparing them.",
+        "Closed-loop lab where a local LLM rewrites a malware-shaped sample to evade signature (YARA) and behavioral (Falco/eBPF) detectors, quantifying each detector's robustness. Multi-stage Dockerized pipeline with a live SSE dashboard, enforcing strict network isolation and no persistence.",
+      image:
+        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+      link: "https://github.com/BGISS/Hydra",
+      tech: ["Python", "Docker", "LLMs", "YARA", "Falco/eBPF"],
+    },
+    {
+      title: "Similarity Search Image Processor",
+      description:
+        "Concurrent image similarity search tool in Go using goroutines and parallel processing. Built an image comparison pipeline capable of processing large-scale image datasets, with multi-threaded design patterns and optimized data structures to boost throughput.",
       image:
         "https://images.unsplash.com/photo-1752080036636-64e7068e12bc?w=800&q=80",
       link: "https://github.com/BGISS/Similar-Search",
-      tech: ["Java", "Color Histograms", "Image Processing"],
+      tech: ["Go", "Concurrency", "Goroutines", "Data Structures"],
     },
     {
       title: "E-Hotel Management System",
@@ -131,7 +141,9 @@ export default function App() {
         </div>
 
         <div className="hero-content">
-          {/* <div className="hero-tag">Computer Science @ University of Ottawa</div> */}
+          <div className="hero-tag">
+            CS @ uOttawa · Full-stack &amp; Systems Developer
+          </div>
           <h1 className="hero-title">
             <span className="text-reveal">Hi there!</span>
           </h1>
@@ -170,6 +182,17 @@ export default function App() {
             >
               Get In Touch
             </button>
+            <a
+              className="cta-secondary"
+              href="/Girish_Bissessur_Cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={() => setCursorVariant("link")}
+              onMouseLeave={() => setCursorVariant("default")}
+            >
+              <FileText size={18} />
+              Resume
+            </a>
           </div>
         </div>
 
@@ -214,6 +237,34 @@ export default function App() {
                 connecting with people who are building cool things or have
                 interesting ideas.
               </p>
+
+              <div className="skills-strip">
+                {[
+                  {
+                    label: "Languages",
+                    items: ["Java", "C/C++", "Python", "JavaScript", "TypeScript", "Go", "C#", "SQL"],
+                  },
+                  {
+                    label: "Tools",
+                    items: ["Git", "Docker", "Kubernetes", "Helm", "PostgreSQL", "MySQL", "AWS", "Linux"],
+                  },
+                  {
+                    label: "Frameworks",
+                    items: ["React", "Laravel", "Express", "GraphQL", "Playwright", "TensorFlow", "Pandas"],
+                  },
+                ].map((group) => (
+                  <div key={group.label} className="skills-group">
+                    <span className="skills-label">{group.label}</span>
+                    <div className="skills-tags">
+                      {group.items.map((item) => (
+                        <span key={item} className="tech-tag">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div className="about-card card-secondary">
