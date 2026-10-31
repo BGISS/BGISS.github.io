@@ -83,6 +83,21 @@ export default function App() {
     },
   ];
 
+  const skills = [
+    {
+      label: "Languages",
+      items: ["Java", "C", "C++", "Python", "JavaScript", "TypeScript", "Go", "C#", "SQL"],
+    },
+    {
+      label: "Tools",
+      items: ["Git", "Docker", "Kubernetes", "Helm", "PostgreSQL", "MySQL", "AWS", "Linux", "Jupyter"],
+    },
+    {
+      label: "Frameworks",
+      items: ["React", "Laravel", "Express", "GraphQL", "Playwright", "JUnit", "TensorFlow", "Pandas"],
+    },
+  ];
+
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     setIsMenuOpen(false);
@@ -118,7 +133,7 @@ export default function App() {
         </button>
 
         <div className={`nav-links ${isMenuOpen ? "nav-open" : ""}`}>
-          {["home", "about", "projects", "contact"].map((section) => (
+          {["home", "about", "skills", "projects", "contact"].map((section) => (
             <button
               key={section}
               className={`nav-link ${activeSection === section ? "active" : ""}`}
@@ -237,34 +252,6 @@ export default function App() {
                 connecting with people who are building cool things or have
                 interesting ideas.
               </p>
-
-              <div className="skills-strip">
-                {[
-                  {
-                    label: "Languages",
-                    items: ["Java", "C/C++", "Python", "JavaScript", "TypeScript", "Go", "C#", "SQL"],
-                  },
-                  {
-                    label: "Tools",
-                    items: ["Git", "Docker", "Kubernetes", "Helm", "PostgreSQL", "MySQL", "AWS", "Linux"],
-                  },
-                  {
-                    label: "Frameworks",
-                    items: ["React", "Laravel", "Express", "GraphQL", "Playwright", "TensorFlow", "Pandas"],
-                  },
-                ].map((group) => (
-                  <div key={group.label} className="skills-group">
-                    <span className="skills-label">{group.label}</span>
-                    <div className="skills-tags">
-                      {group.items.map((item) => (
-                        <span key={item} className="tech-tag">
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="about-card card-secondary">
@@ -294,11 +281,36 @@ export default function App() {
         </div>
       </section>
 
+      {/* Skills Section */}
+      <section id="skills" className="skills-section">
+        <div className="section-container">
+          <div className="section-header">
+            <span className="section-number">02</span>
+            <h2 className="section-title">Skills</h2>
+          </div>
+
+          <div className="skills-grid">
+            {skills.map((group) => (
+              <div key={group.label} className="skills-col">
+                <span className="skills-col-label">{group.label}</span>
+                <div className="skills-col-chips">
+                  {group.items.map((item) => (
+                    <span key={item} className="skill-chip">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="projects-section">
         <div className="section-container">
           <div className="section-header">
-            <span className="section-number">02</span>
+            <span className="section-number">03</span>
             <h2 className="section-title">My Projects</h2>
           </div>
 
@@ -340,7 +352,7 @@ export default function App() {
       <section id="contact" className="contact-section">
         <div className="section-container">
           <div className="section-header">
-            <span className="section-number">03</span>
+            <span className="section-number">04</span>
             <h2 className="section-title">Get In Touch</h2>
           </div>
 
